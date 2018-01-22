@@ -1,0 +1,35 @@
+#!sbush
+echo testing cd:
+pwd
+cd /
+pwd
+cd roots/bin
+pwd
+cd ../..
+pwd
+cd ..
+pwd
+cd .
+pwd
+cd /rootfs/bin/
+pwd
+cd ../etc/
+pwd
+sleep 1
+echo testing ls:
+ls /rootfs/bin
+ls
+ls /
+sleep 1
+echo testing cat:
+cat /rootfs/etc/rc
+echo "testing env vars:"
+export NEWVAR=/pqr/trd/
+env
+export PATH=$PATH:/rootfs/bin/
+echo new PATH
+echo $PATH
+echo tesing PS1
+export PS1=newpromp#
+ps
+kill -9 999

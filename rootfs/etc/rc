@@ -1,0 +1,4 @@
+#!sbush
+echo "--------Welcome TO SBUSH----------"
+cat /rootfs/etc/ulimits
+cat /rootfs/etc/help
